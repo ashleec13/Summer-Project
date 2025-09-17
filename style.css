@@ -1,4 +1,9 @@
 main{
+    background-color: #f5c7ca;
+    height: 100vh;
+
+}
+.nav{
     background-color: #CFE8F3;
-height: 100vh;
+    text-color: black;
 }
