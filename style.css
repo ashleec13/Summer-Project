@@ -15,7 +15,7 @@ body {
   font-family: "dynapuff", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size:4vh;
+  font-size: 4vh;
 }
 
 .intro {
@@ -25,7 +25,8 @@ body {
 }
 
 .intro2 {
-  font-size: 10vh;
+  font-size: 6vh;
+  padding-top: 10px;
 
 }
 
@@ -157,8 +158,8 @@ h2 {
 .image-overlay-text {
   position: absolute;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  color: #fff;
+  background: #f89ba19a;
+  color: #ffffff;
   width: 100%;
   padding: 15px;
   text-align: center;
@@ -173,4 +174,15 @@ h2 {
 
 
 
-/*END HOVERS ON MENU*/
+footer {
+  background-color: #c4bbe6;
+position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-top:20px;
+}
+
+a {
+  text-decoration: none;
+
+}
