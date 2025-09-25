@@ -1,46 +1,63 @@
-html, main {
-    background-color: #f5c7ca;
-    height: 100%;
-    font-family: "dynapuff", sans-serif;
-    font-weight: 500;
-    font-style: normal;
+html,
+main,
+body {
+  background-color: #f5c7ca;
+  height: 100%;
+  font-family: "dynapuff", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 
 }
 
 .nav {
-    background-color: #CFE8F3;
-    text-color: black;
-    position: sticky;
+  background-color: #CFE8F3;
+  position: sticky;
+  font-family: "dynapuff", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size:4vh;
 }
 
 .intro {
-    font-size: 2vh;
-    background-color: #FFE3B3;
+  font-size: 2vh;
+  background-color: #FFE3B3;
+
 }
 
+.intro2 {
+  font-size: 10vh;
+
+}
+
+
 .card {
-    text-align: center;
-    border-radius: 10px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #f5c7ca;
+  border: none;
 }
 
 .card-body {
-    background-color: #C2E7DA;
-    border: 10px solid #98D7C1;
-    border-radius: 5px;
+  background-color: #C2E7DA;
+  border: 10px solid #98D7C1;
+  border-radius: 5px;
 }
 
 .card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius:5px;
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+  border-radius: 0;
+  background-color: #f5c7ca;
 }
+
 
 .map-container {
   position: relative;
   width: 90%;
-  max-width: 1200px;  
-  height: 60vh;       
+  max-width: 1200px;
+  height: 60vh;
 }
 
 .map-container iframe {
@@ -51,22 +68,22 @@ html, main {
   height: 100%;
   border: 10px solid #6aa4fc;
   border-radius: 12px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
-    
-/* START FLIP CARDS */
 
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* START FLIP CARDS | FOUND ON W3 SCHOOLS, LINK WHERE FOUND IN HTML */
+
+
 .flip-card {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  text-align:center;
+  text-align: center;
 
-  }
+}
 
-/* This container is needed to position the front and back side */
+
 .flip-card-inner {
   position: relative;
   width: 100%;
@@ -76,30 +93,84 @@ html, main {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius:10px;
+  border-radius: 10px;
 
 }
 
 
-/* Style the back side */
+
 .flip-card-back {
   color: white;
-  font-size:20px;
-  height:300px;
-  width:300px;
-  text-align:center;
+  font-size: 20px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
   transform: rotateY(180deg);
 }
 
+.flip-card-back,
+h2 {
+  color: #C36346;
+}
+
+
 /* END FLIP CARDS */
+
+
+.carousel-img {
+  height: 250px;
+  object-fit: contain;
+  background-color: #f5c7ca;
+}
+
+
+
+
+.image-overlay-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.image-overlay-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  border-radius: 3px;
+}
+
+
+.image-overlay-text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+
+.image-overlay-container:hover .image-overlay-text {
+  opacity: 1;
+}
+
+
+
+/*END HOVERS ON MENU*/
